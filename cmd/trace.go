@@ -34,20 +34,6 @@ func init() {
 	rootCmd.AddCommand(traceCmd)
 }
 
-// {
-// 	"ip": "1.1.1.1",
-// 	"hostname": "one.one.one.one",
-// 	"anycast": true,
-// 	"city": "Los Angeles",
-// 	"region": "California",
-// 	"country": "US",
-// 	"loc": "34.0522,-118.2437",
-// 	"org": "AS13335 Cloudflare, Inc.",
-// 	"postal": "90076",
-// 	"timezone": "America/Los_Angeles",
-// 	"readme": "https://ipinfo.io/missingauth"
-// }
-
 type Ip struct{
 	IP string `json::"ip"`
 	City string `json::"city"`
